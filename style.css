@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topo {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Empurra conteúdo pra não colar no topo */
+main {
+    margin-top: 40px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8b0;
+    text-align: center;
+    padding: 50px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+}
+
+/* --- Responsividade (celular) --- */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px; /* diminui o espaço no celular */
+    }
+
+    input, select, button {
+        width: 100%;      /* ocupa toda a tela */
+        font-size: 18px;  /* mais confortável no dedo */
+    }
+
+    #resultado {
+        text-align: center; /* melhor pra telas pequenas */
+        display: block;
+    }
+}
